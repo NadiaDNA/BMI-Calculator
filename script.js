@@ -10,3 +10,9 @@
 //Berat Badan 60 KG
 //Tinggi Badan 167 CM BMI = 60 / (167/100)^2 BMI = 60 / (2.8) BMI = 21.5 BMI Categories: Normal Weight
 
+function hitungBMI(){
+    let berat = Number(document.getElementById('beratBadan').value);
+    let tinggi = Number(document.getElementById('tinggiBadan').value);
+    let bmi = berat/(tinggi/100)**2;
+
+}
