@@ -13,6 +13,6 @@
 function hitungBMI(){
     let berat = Number(document.getElementById('beratBadan').value);
     let tinggi = Number(document.getElementById('tinggiBadan').value);
-    let bmi = berat/(tinggi/100)**2;
-
+    let bmi = berat/((tinggi/100)**2);
+console.log(bmi)
 }
