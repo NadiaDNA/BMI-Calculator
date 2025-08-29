@@ -18,4 +18,9 @@ console.log(bmi)
 
 document.getElementById('heading').innerHTML = "Hasil BMI :"
 document.getElementById('bmi-outpost').innerHTML = bmi
+
+if (bmi < 18.5){
+    document.getElementById('message').innerHTML = "Anda Termasuk Underweight atau berat rendah.<br /> Utamakan hidup sehat dan perhatikan konsumsi harian!"
+}
+
 }
