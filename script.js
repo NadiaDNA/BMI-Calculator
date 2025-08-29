@@ -17,7 +17,7 @@ function hitungBMI(){
 console.log(bmi)
 
 document.getElementById('heading').innerHTML = "Hasil BMI :"
-document.getElementById('bmi-outpost').innerHTML = bmi
+document.getElementById('bmi-outpost').innerHTML = bmi.toFixed(1)
 
 if (bmi < 18.5){
     document.getElementById('message').innerHTML = "Anda termasuk underweight atau berat rendah.<br /> Utamakan hidup sehat dan perhatikan konsumsi harian!"
