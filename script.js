@@ -19,7 +19,17 @@ console.log(bmi)
 document.getElementById('heading').innerHTML = "Hasil BMI :"
 document.getElementById('bmi-outpost').innerHTML = bmi.toFixed(1)
 
-if (bmi < 18.5){
+if (berat == '' || berat == null){
+    alert('Mohon isi Berat badan anda')
+retur;
+}
+
+if (tinggi == '' || tinggi == null){
+    alert('Mohon isi tinggi badan anda')
+return;
+}
+
+if (bmi >= 1 && bmi < 18.5){
     document.getElementById('message').innerHTML = "Anda termasuk <strong>underweight</strong> atau <strong>berat rendah.</strong><br /> Utamakan hidup sehat dan perhatikan konsumsi harian!"
 }
 else if (bmi >= 18.5 && bmi < 25){
