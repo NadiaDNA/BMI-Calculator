@@ -23,7 +23,12 @@ if (bmi < 18.5){
     document.getElementById('message').innerHTML = "Anda termasuk underweight atau berat rendah.<br /> Utamakan hidup sehat dan perhatikan konsumsi harian!"
 }
 else if (bmi >= 18.5 && bmi < 25){
-    document.getElementById('message').innerHTML = "Anda termasuk normalweight atau berat ideal.<br /> Pastikan asupan kalori sesuai dengan kebutuhan kalori harian & konsumsi makanan sehat!"
+    document.getElementById('message').innerHTML = "Anda termasuk normalweight atau berat ideal.<br /> Pertahankan dan pastikan asupan kalori sesuai dengan kebutuhan kalori harian & konsumsi makanan sehat!"
 }
-
+else if (bmi >= 25 && bmi < 30){
+    document.getElementById('message').innerHTML = "Anda termasuk overweight atau berat berlebih.<br /> Utamakan hidup sehat dan perhatikan pola makan!"
+}
+else if (bmi >= 30){
+    document.getElementById('message').innerHTML = "Anda termasuk obesity atau obesitas.<br /> Utamakan hidup sehat dan perhatikan pola makan!"
+}
 }
