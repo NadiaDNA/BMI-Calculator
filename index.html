@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>BMI Calculator</title>
 </head>
 <body>
-    <h1>BMI Calculator</h1>
-    <h2>Silahkan isi berat dan tinggi badan Anda untuk menghitung BMI!</h2>
-    <label for="beratBadan">Berat Badan (kg)</label> <br />
-    <input id="beratBadan" type="number" class="spasi" > <br />
-    <label for="tinggiBadan">Tinggi Badan (cm)</label><br />
-    <input id="tinggiBadan" type="number"class="spasiBig" ><br />
-    <button onclick="hitungBMI()">Hitung BMI</button>
-    
-    <h4 id="heading"></h4>
-    <p id="bmi-outpost"></p>
-    <p id="message"></p>
+    <div class="container">
+        <div class="box">
+            <h1>BMI Calculator</h1>
+            <h2>Silahkan isi berat dan tinggi badan Anda untuk menghitung BMI!</h2>
+            <div class="content">
+                <div class="input">
+                    <label for="beratBadan">Berat Badan (kg)</label> <br />
+                    <input id="beratBadan" type="number" class="spasi" > <br />
+                </div> 
+                <div class="input">
+                    <label for="tinggiBadan">Tinggi Badan (cm)</label><br />
+                    <input id="tinggiBadan" type="number"class="spasiBig" ><br />
+                </div>
+
+                <button onclick="hitungBMI()">Hitung BMI</button>
+
+                <h4 id="heading"></h4>
+                <div class="result">
+                    <p id="bmi-outpost"></p>
+                </div>
+                <p id="message"></p>
+            </div>
+        </div>
+     </div>
 </body>
 </html>
