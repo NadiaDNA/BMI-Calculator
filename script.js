@@ -21,11 +21,13 @@ document.getElementById('bmi-outpost').innerHTML = bmi.toFixed(1)
 
 if (berat == '' || berat == null){
     alert('Mohon isi Berat badan anda')
-retur;
+    document.getElementById('isiBerat').innerHTML = "Silahkan isi <strong>Berat badan</strong> Anda"
+return;
 }
 
 if (tinggi == '' || tinggi == null){
     alert('Mohon isi tinggi badan anda')
+    document.getElementById('isiTinggi').innerHTML = "Silahkan isi <strong>Tinggi badan</strong> Anda"
 return;
 }
 
